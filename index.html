@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevOps: GitHub Pages CI/CD</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <main class="wrap">
+      <p class="eyebrow">Beginner DevOps Project</p>
+      <h1>Shipped by GitHub Actions.</h1>
+      <p class="lede">
+        A tiny static site that exists to prove one thing: every push to
+        <code>main</code> flows through CI, then lands on GitHub Pages
+        automatically.
+      </p>
+
+      <section class="pipeline" aria-label="Pipeline">
+        <div class="step">
+          <span class="dot" aria-hidden="true"></span>
+          <div>
+            <h2>1. Push</h2>
+            <p>Commit lands on <code>main</code>.</p>
+          </div>
+        </div>
+        <div class="step">
+          <span class="dot" aria-hidden="true"></span>
+          <div>
+            <h2>2. CI</h2>
+            <p>Install deps, run <code>npm run build</code>.</p>
+          </div>
+        </div>
+        <div class="step">
+          <span class="dot" aria-hidden="true"></span>
+          <div>
+            <h2>3. CD</h2>
+            <p>Upload <code>dist/</code> and deploy to Pages.</p>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <p id="build-info"></p>
+      </footer>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
